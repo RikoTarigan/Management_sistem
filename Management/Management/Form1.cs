@@ -485,6 +485,7 @@ namespace Management
 
                 if (Image.Contains(e.Location))
                 {
+                    tabControl1.TabPages[i].Controls.Clear();
                     tabControl1.TabPages.RemoveAt(i);
                     break;
                 }
@@ -492,7 +493,6 @@ namespace Management
                 {
                     if (tabControl1.TabPages[i].Text == tabControl1.SelectedTab.Text)
                     {
-                        //MessageBox.Show(tabControl1.TabPages[i].Text);
                         tabControl1.SelectedTab = tabControl1.TabPages[i];
                         lblScreenName.Text = tabControl1.SelectedTab.Text;
                         break;

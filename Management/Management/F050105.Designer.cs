@@ -129,12 +129,23 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dataTable2 = new System.Data.DataTable();
+            this.dataColumn28 = new System.Data.DataColumn();
+            this.dataColumn29 = new System.Data.DataColumn();
+            this.dataColumn30 = new System.Data.DataColumn();
+            this.dataColumn31 = new System.Data.DataColumn();
+            this.dataColumn32 = new System.Data.DataColumn();
+            this.dataColumn33 = new System.Data.DataColumn();
+            this.dataColumn34 = new System.Data.DataColumn();
+            this.dataColumn35 = new System.Data.DataColumn();
+            this.dataColumn36 = new System.Data.DataColumn();
             ((System.ComponentModel.ISupportInitialize)(this.ds_data)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataTable1)).BeginInit();
             this.DetailPasangan.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable2)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -451,7 +462,8 @@
             // 
             this.ds_data.DataSetName = "NewDataSet";
             this.ds_data.Tables.AddRange(new System.Data.DataTable[] {
-            this.dataTable1});
+            this.dataTable1,
+            this.dataTable2});
             // 
             // dataTable1
             // 
@@ -649,6 +661,7 @@
             this.txtNamaCustomer.Name = "txtNamaCustomer";
             this.txtNamaCustomer.Size = new System.Drawing.Size(244, 20);
             this.txtNamaCustomer.TabIndex = 255;
+            this.txtNamaCustomer.TextChanged += new System.EventHandler(this.txtNamaCustomer_TextChanged);
             // 
             // label14
             // 
@@ -989,6 +1002,56 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "DETAIL ANGGOTA";
             // 
+            // dataTable2
+            // 
+            this.dataTable2.Columns.AddRange(new System.Data.DataColumn[] {
+            this.dataColumn28,
+            this.dataColumn29,
+            this.dataColumn30,
+            this.dataColumn31,
+            this.dataColumn32,
+            this.dataColumn33,
+            this.dataColumn34,
+            this.dataColumn35,
+            this.dataColumn36});
+            this.dataTable2.TableName = "JAMINAN";
+            // 
+            // dataColumn28
+            // 
+            this.dataColumn28.ColumnName = "NO_JAMINAN";
+            // 
+            // dataColumn29
+            // 
+            this.dataColumn29.ColumnName = "JENIS_JAMINAN";
+            // 
+            // dataColumn30
+            // 
+            this.dataColumn30.ColumnName = "NO_ANGGOTA";
+            // 
+            // dataColumn31
+            // 
+            this.dataColumn31.ColumnName = "TANGGAL_MASUK";
+            // 
+            // dataColumn32
+            // 
+            this.dataColumn32.ColumnName = "NAMA_BARANG";
+            // 
+            // dataColumn33
+            // 
+            this.dataColumn33.ColumnName = "TIPE_BARANG";
+            // 
+            // dataColumn34
+            // 
+            this.dataColumn34.ColumnName = "KET1";
+            // 
+            // dataColumn35
+            // 
+            this.dataColumn35.ColumnName = "KET2";
+            // 
+            // dataColumn36
+            // 
+            this.dataColumn36.ColumnName = "NAMA_COLLECTOR";
+            // 
             // F050105
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1038,6 +1101,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1144,5 +1208,15 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Data.DataTable dataTable2;
+        private System.Data.DataColumn dataColumn28;
+        private System.Data.DataColumn dataColumn29;
+        private System.Data.DataColumn dataColumn30;
+        private System.Data.DataColumn dataColumn31;
+        private System.Data.DataColumn dataColumn32;
+        private System.Data.DataColumn dataColumn33;
+        private System.Data.DataColumn dataColumn34;
+        private System.Data.DataColumn dataColumn35;
+        private System.Data.DataColumn dataColumn36;
     }
 }

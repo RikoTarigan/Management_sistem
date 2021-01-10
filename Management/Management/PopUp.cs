@@ -41,6 +41,7 @@ namespace Management
             else if(formname == "F050102")
             {
                 F050102.val = dr.Cells["NO_ANGGOTA"].Value.ToString();
+                F050102.nama_customer = dr.Cells["NAMA_COSTUMER"].Value.ToString();
             }
             this.Close();
         }
@@ -49,7 +50,17 @@ namespace Management
         {
             dataGridView1.Refresh();
             connection c = new connection();
-            MySqlDataAdapter da = new MySqlDataAdapter("SELECT * FROM NASABAH where NAMA_COSTUMER LIKE '" + textBox1.Text+"%'", c.connetionString);
+            MySqlDataAdapter da = new MySqlDataAdapter("SELECT * FROM NASABAH where NAMA_COSTUMER LIKE '" + textBox1.Text + "%' AND NO_ANGGOTA LIKE '" + textBox2.Text + "%'", c.connetionString);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "Nasabah");
+            dataGridView1.DataSource = ds.Tables["Nasabah"].DefaultView;
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            dataGridView1.Refresh();
+            connection c = new connection();
+            MySqlDataAdapter da = new MySqlDataAdapter("SELECT * FROM NASABAH where NAMA_COSTUMER LIKE '" + textBox1.Text + "%' AND NO_ANGGOTA LIKE '"+textBox2.Text+"%'", c.connetionString);
             DataSet ds = new DataSet();
             da.Fill(ds, "Nasabah");
             dataGridView1.DataSource = ds.Tables["Nasabah"].DefaultView;

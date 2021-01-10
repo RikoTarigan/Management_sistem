@@ -21,25 +21,34 @@ namespace Management
         static int count = 0;
         private void button1_Click(object sender, EventArgs e)
         {
-            string connetionString = null;
-            MySqlConnection cnn;
-            connection con = new connection();
-            connetionString = con.connetionString;
-
-            cnn = new MySqlConnection(connetionString);
-            MySqlCommand cmd = cnn.CreateCommand();
-            cnn.Open();
-            cmd.CommandText = "SELECT NIP FROM USERS WHERE NIP='"+textBox1.Text+"' AND PASSWORD='"+textBox2.Text+"' LIMIT 1";
-            MySqlDataReader reader = cmd.ExecuteReader();
-            string nip = "";
             bool login = false;
-            while (reader.Read())
+            string nip = "";
+            try
             {
-                nip = reader[0].ToString();
-                login = true;
+                string connetionString = null;
+                MySqlConnection cnn;
+                connection con = new connection();
+                connetionString = con.connetionString;
+                cnn = new MySqlConnection(connetionString);
+                MySqlCommand cmd = cnn.CreateCommand();
+                cnn.Open();
+                cmd.CommandText = "SELECT NIP FROM USERS WHERE NIP='" + textBox1.Text + "' AND PASSWORD='" + textBox2.Text + "' LIMIT 1";
+                MySqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    nip = reader[0].ToString();
+                    login = true;
+                }
+                cnn.Close();
             }
-            cnn.Close();
-
+            catch(Exception ex)
+            {
+                DialogResult dg =  MessageBox.Show("Database Erorr\n\nDetail : \n"+ex.Message, "Erorr", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+                if(dg == DialogResult.Cancel)
+                {
+                    Application.Exit();
+                }
+            }
             if (login)
             {
                 this.Hide();
