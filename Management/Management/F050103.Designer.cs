@@ -33,30 +33,6 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtNoJaminan = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.txtKeterangan = new System.Windows.Forms.TextBox();
-            this.cbxJenisJaminan = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtTypeBarang = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.txtNamaBarang = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txtNamaAnggota = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnCetak = new System.Windows.Forms.Button();
             this.ds_data = new System.Data.DataSet();
             this.dataTable1 = new System.Data.DataTable();
             this.dataColumn1 = new System.Data.DataColumn();
@@ -86,20 +62,51 @@
             this.dataColumn25 = new System.Data.DataColumn();
             this.dataColumn26 = new System.Data.DataColumn();
             this.dataColumn27 = new System.Data.DataColumn();
-            this.dataColumn36 = new System.Data.DataColumn();
-            this.dataColumn35 = new System.Data.DataColumn();
-            this.dataColumn34 = new System.Data.DataColumn();
-            this.dataColumn33 = new System.Data.DataColumn();
-            this.dataColumn32 = new System.Data.DataColumn();
-            this.dataColumn31 = new System.Data.DataColumn();
-            this.dataColumn30 = new System.Data.DataColumn();
-            this.dataColumn29 = new System.Data.DataColumn();
-            this.dataColumn28 = new System.Data.DataColumn();
             this.dataTable2 = new System.Data.DataTable();
+            this.dataColumn28 = new System.Data.DataColumn();
+            this.dataColumn29 = new System.Data.DataColumn();
+            this.dataColumn30 = new System.Data.DataColumn();
+            this.dataColumn31 = new System.Data.DataColumn();
+            this.dataColumn32 = new System.Data.DataColumn();
+            this.dataColumn33 = new System.Data.DataColumn();
+            this.dataColumn34 = new System.Data.DataColumn();
+            this.dataColumn35 = new System.Data.DataColumn();
+            this.dataColumn36 = new System.Data.DataColumn();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtNoJaminan = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.txtKeterangan = new System.Windows.Forms.TextBox();
+            this.cbxJenisJaminan = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtTypeBarang = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtNamaBarang = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtNamaAnggota = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCetak = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.dataTable3 = new System.Data.DataTable();
+            this.dataColumn37 = new System.Data.DataColumn();
+            this.dataColumn38 = new System.Data.DataColumn();
+            this.dataColumn39 = new System.Data.DataColumn();
+            this.dataColumn40 = new System.Data.DataColumn();
+            this.dataColumn41 = new System.Data.DataColumn();
             ((System.ComponentModel.ISupportInitialize)(this.ds_data)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataTable2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable3)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -140,6 +147,204 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(174, 20);
             this.textBox5.TabIndex = 37;
+            // 
+            // ds_data
+            // 
+            this.ds_data.DataSetName = "NewDataSet";
+            this.ds_data.Tables.AddRange(new System.Data.DataTable[] {
+            this.dataTable1,
+            this.dataTable2,
+            this.dataTable3});
+            // 
+            // dataTable1
+            // 
+            this.dataTable1.Columns.AddRange(new System.Data.DataColumn[] {
+            this.dataColumn1,
+            this.dataColumn2,
+            this.dataColumn3,
+            this.dataColumn4,
+            this.dataColumn5,
+            this.dataColumn6,
+            this.dataColumn7,
+            this.dataColumn8,
+            this.dataColumn9,
+            this.dataColumn10,
+            this.dataColumn11,
+            this.dataColumn12,
+            this.dataColumn13,
+            this.dataColumn14,
+            this.dataColumn15,
+            this.dataColumn16,
+            this.dataColumn17,
+            this.dataColumn18,
+            this.dataColumn19,
+            this.dataColumn20,
+            this.dataColumn21,
+            this.dataColumn22,
+            this.dataColumn23,
+            this.dataColumn24,
+            this.dataColumn25,
+            this.dataColumn26,
+            this.dataColumn27});
+            this.dataTable1.TableName = "NASABAH";
+            // 
+            // dataColumn1
+            // 
+            this.dataColumn1.ColumnName = "NAMA_COSTUMER";
+            // 
+            // dataColumn2
+            // 
+            this.dataColumn2.ColumnName = "NO_KTP";
+            // 
+            // dataColumn3
+            // 
+            this.dataColumn3.ColumnName = "NO_KK";
+            // 
+            // dataColumn4
+            // 
+            this.dataColumn4.ColumnName = "AGAMA";
+            // 
+            // dataColumn5
+            // 
+            this.dataColumn5.ColumnName = "TEMPAT_LAHIR";
+            // 
+            // dataColumn6
+            // 
+            this.dataColumn6.ColumnName = "TANGGAL_LAHIR";
+            // 
+            // dataColumn7
+            // 
+            this.dataColumn7.ColumnName = "JK";
+            // 
+            // dataColumn8
+            // 
+            this.dataColumn8.ColumnName = "ALAMAT_KTP";
+            // 
+            // dataColumn9
+            // 
+            this.dataColumn9.ColumnName = "ALAMAT_DOMISILI";
+            // 
+            // dataColumn10
+            // 
+            this.dataColumn10.ColumnName = "TELP";
+            // 
+            // dataColumn11
+            // 
+            this.dataColumn11.ColumnName = "PEKERJAAN";
+            // 
+            // dataColumn12
+            // 
+            this.dataColumn12.ColumnName = "NAMA_IBU_KANDUNG";
+            // 
+            // dataColumn13
+            // 
+            this.dataColumn13.ColumnName = "TANGGAL_LAHIR_IBU";
+            // 
+            // dataColumn14
+            // 
+            this.dataColumn14.ColumnName = "NAMA_USAHA";
+            // 
+            // dataColumn15
+            // 
+            this.dataColumn15.ColumnName = "ALAMAT_UsAHA";
+            // 
+            // dataColumn16
+            // 
+            this.dataColumn16.ColumnName = "JENIS_USAHA";
+            // 
+            // dataColumn17
+            // 
+            this.dataColumn17.ColumnName = "NAMA_BANK";
+            // 
+            // dataColumn18
+            // 
+            this.dataColumn18.ColumnName = "NO_REKENING";
+            // 
+            // dataColumn19
+            // 
+            this.dataColumn19.ColumnName = "NAMA_REKENING";
+            // 
+            // dataColumn20
+            // 
+            this.dataColumn20.ColumnName = "NAMA_SALES";
+            // 
+            // dataColumn21
+            // 
+            this.dataColumn21.ColumnName = "WILAYAH_AREA_TAGIH";
+            // 
+            // dataColumn22
+            // 
+            this.dataColumn22.ColumnName = "STATUS_APPL";
+            // 
+            // dataColumn23
+            // 
+            this.dataColumn23.ColumnName = "STATUS_MENIKAH";
+            // 
+            // dataColumn24
+            // 
+            this.dataColumn24.ColumnName = "NAMA_PASANGAN";
+            // 
+            // dataColumn25
+            // 
+            this.dataColumn25.ColumnName = "NO_KTP_PASANGAN";
+            // 
+            // dataColumn26
+            // 
+            this.dataColumn26.ColumnName = "ALAMAT_PASANGAN";
+            // 
+            // dataColumn27
+            // 
+            this.dataColumn27.ColumnName = "TELP_PASANGAN";
+            // 
+            // dataTable2
+            // 
+            this.dataTable2.Columns.AddRange(new System.Data.DataColumn[] {
+            this.dataColumn28,
+            this.dataColumn29,
+            this.dataColumn30,
+            this.dataColumn31,
+            this.dataColumn32,
+            this.dataColumn33,
+            this.dataColumn34,
+            this.dataColumn35,
+            this.dataColumn36});
+            this.dataTable2.TableName = "JAMINAN";
+            // 
+            // dataColumn28
+            // 
+            this.dataColumn28.ColumnName = "NO_JAMINAN";
+            // 
+            // dataColumn29
+            // 
+            this.dataColumn29.ColumnName = "JENIS_JAMINAN";
+            // 
+            // dataColumn30
+            // 
+            this.dataColumn30.ColumnName = "NO_ANGGOTA";
+            // 
+            // dataColumn31
+            // 
+            this.dataColumn31.ColumnName = "TANGGAL_MASUK";
+            // 
+            // dataColumn32
+            // 
+            this.dataColumn32.ColumnName = "NAMA_BARANG";
+            // 
+            // dataColumn33
+            // 
+            this.dataColumn33.ColumnName = "TIPE_BARANG";
+            // 
+            // dataColumn34
+            // 
+            this.dataColumn34.ColumnName = "KET1";
+            // 
+            // dataColumn35
+            // 
+            this.dataColumn35.ColumnName = "KET2";
+            // 
+            // dataColumn36
+            // 
+            this.dataColumn36.ColumnName = "NAMA_COLLECTOR";
             // 
             // label6
             // 
@@ -376,203 +581,6 @@
             this.btnCetak.UseVisualStyleBackColor = true;
             this.btnCetak.Click += new System.EventHandler(this.btnCetak_Click);
             // 
-            // ds_data
-            // 
-            this.ds_data.DataSetName = "NewDataSet";
-            this.ds_data.Tables.AddRange(new System.Data.DataTable[] {
-            this.dataTable1,
-            this.dataTable2});
-            // 
-            // dataTable1
-            // 
-            this.dataTable1.Columns.AddRange(new System.Data.DataColumn[] {
-            this.dataColumn1,
-            this.dataColumn2,
-            this.dataColumn3,
-            this.dataColumn4,
-            this.dataColumn5,
-            this.dataColumn6,
-            this.dataColumn7,
-            this.dataColumn8,
-            this.dataColumn9,
-            this.dataColumn10,
-            this.dataColumn11,
-            this.dataColumn12,
-            this.dataColumn13,
-            this.dataColumn14,
-            this.dataColumn15,
-            this.dataColumn16,
-            this.dataColumn17,
-            this.dataColumn18,
-            this.dataColumn19,
-            this.dataColumn20,
-            this.dataColumn21,
-            this.dataColumn22,
-            this.dataColumn23,
-            this.dataColumn24,
-            this.dataColumn25,
-            this.dataColumn26,
-            this.dataColumn27});
-            this.dataTable1.TableName = "NASABAH";
-            // 
-            // dataColumn1
-            // 
-            this.dataColumn1.ColumnName = "NAMA_COSTUMER";
-            // 
-            // dataColumn2
-            // 
-            this.dataColumn2.ColumnName = "NO_KTP";
-            // 
-            // dataColumn3
-            // 
-            this.dataColumn3.ColumnName = "NO_KK";
-            // 
-            // dataColumn4
-            // 
-            this.dataColumn4.ColumnName = "AGAMA";
-            // 
-            // dataColumn5
-            // 
-            this.dataColumn5.ColumnName = "TEMPAT_LAHIR";
-            // 
-            // dataColumn6
-            // 
-            this.dataColumn6.ColumnName = "TANGGAL_LAHIR";
-            // 
-            // dataColumn7
-            // 
-            this.dataColumn7.ColumnName = "JK";
-            // 
-            // dataColumn8
-            // 
-            this.dataColumn8.ColumnName = "ALAMAT_KTP";
-            // 
-            // dataColumn9
-            // 
-            this.dataColumn9.ColumnName = "ALAMAT_DOMISILI";
-            // 
-            // dataColumn10
-            // 
-            this.dataColumn10.ColumnName = "TELP";
-            // 
-            // dataColumn11
-            // 
-            this.dataColumn11.ColumnName = "PEKERJAAN";
-            // 
-            // dataColumn12
-            // 
-            this.dataColumn12.ColumnName = "NAMA_IBU_KANDUNG";
-            // 
-            // dataColumn13
-            // 
-            this.dataColumn13.ColumnName = "TANGGAL_LAHIR_IBU";
-            // 
-            // dataColumn14
-            // 
-            this.dataColumn14.ColumnName = "NAMA_USAHA";
-            // 
-            // dataColumn15
-            // 
-            this.dataColumn15.ColumnName = "ALAMAT_UsAHA";
-            // 
-            // dataColumn16
-            // 
-            this.dataColumn16.ColumnName = "JENIS_USAHA";
-            // 
-            // dataColumn17
-            // 
-            this.dataColumn17.ColumnName = "NAMA_BANK";
-            // 
-            // dataColumn18
-            // 
-            this.dataColumn18.ColumnName = "NO_REKENING";
-            // 
-            // dataColumn19
-            // 
-            this.dataColumn19.ColumnName = "NAMA_REKENING";
-            // 
-            // dataColumn20
-            // 
-            this.dataColumn20.ColumnName = "NAMA_SALES";
-            // 
-            // dataColumn21
-            // 
-            this.dataColumn21.ColumnName = "WILAYAH_AREA_TAGIH";
-            // 
-            // dataColumn22
-            // 
-            this.dataColumn22.ColumnName = "STATUS_APPL";
-            // 
-            // dataColumn23
-            // 
-            this.dataColumn23.ColumnName = "STATUS_MENIKAH";
-            // 
-            // dataColumn24
-            // 
-            this.dataColumn24.ColumnName = "NAMA_PASANGAN";
-            // 
-            // dataColumn25
-            // 
-            this.dataColumn25.ColumnName = "NO_KTP_PASANGAN";
-            // 
-            // dataColumn26
-            // 
-            this.dataColumn26.ColumnName = "ALAMAT_PASANGAN";
-            // 
-            // dataColumn27
-            // 
-            this.dataColumn27.ColumnName = "TELP_PASANGAN";
-            // 
-            // dataColumn36
-            // 
-            this.dataColumn36.ColumnName = "NAMA_COLLECTOR";
-            // 
-            // dataColumn35
-            // 
-            this.dataColumn35.ColumnName = "KET2";
-            // 
-            // dataColumn34
-            // 
-            this.dataColumn34.ColumnName = "KET1";
-            // 
-            // dataColumn33
-            // 
-            this.dataColumn33.ColumnName = "TIPE_BARANG";
-            // 
-            // dataColumn32
-            // 
-            this.dataColumn32.ColumnName = "NAMA_BARANG";
-            // 
-            // dataColumn31
-            // 
-            this.dataColumn31.ColumnName = "TANGGAL_MASUK";
-            // 
-            // dataColumn30
-            // 
-            this.dataColumn30.ColumnName = "NO_ANGGOTA";
-            // 
-            // dataColumn29
-            // 
-            this.dataColumn29.ColumnName = "JENIS_JAMINAN";
-            // 
-            // dataColumn28
-            // 
-            this.dataColumn28.ColumnName = "NO_JAMINAN";
-            // 
-            // dataTable2
-            // 
-            this.dataTable2.Columns.AddRange(new System.Data.DataColumn[] {
-            this.dataColumn28,
-            this.dataColumn29,
-            this.dataColumn30,
-            this.dataColumn31,
-            this.dataColumn32,
-            this.dataColumn33,
-            this.dataColumn34,
-            this.dataColumn35,
-            this.dataColumn36});
-            this.dataTable2.TableName = "JAMINAN";
-            // 
             // richTextBox1
             // 
             this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -583,6 +591,36 @@
             this.richTextBox1.TabIndex = 135;
             this.richTextBox1.Text = "";
             this.richTextBox1.Visible = false;
+            // 
+            // dataTable3
+            // 
+            this.dataTable3.Columns.AddRange(new System.Data.DataColumn[] {
+            this.dataColumn37,
+            this.dataColumn38,
+            this.dataColumn39,
+            this.dataColumn40,
+            this.dataColumn41});
+            this.dataTable3.TableName = "SALES";
+            // 
+            // dataColumn37
+            // 
+            this.dataColumn37.ColumnName = "SALES_ID";
+            // 
+            // dataColumn38
+            // 
+            this.dataColumn38.ColumnName = "NM_SALES";
+            // 
+            // dataColumn39
+            // 
+            this.dataColumn39.ColumnName = "ALAMAT_SALES";
+            // 
+            // dataColumn40
+            // 
+            this.dataColumn40.ColumnName = "TELP_SALES";
+            // 
+            // dataColumn41
+            // 
+            this.dataColumn41.ColumnName = "IS_ACTIVE";
             // 
             // F050103
             // 
@@ -622,6 +660,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ds_data)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataTable2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -696,5 +735,11 @@
         private System.Data.DataColumn dataColumn35;
         private System.Data.DataColumn dataColumn36;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Data.DataTable dataTable3;
+        private System.Data.DataColumn dataColumn37;
+        private System.Data.DataColumn dataColumn38;
+        private System.Data.DataColumn dataColumn39;
+        private System.Data.DataColumn dataColumn40;
+        private System.Data.DataColumn dataColumn41;
     }
 }

@@ -302,8 +302,8 @@ namespace Management
                         userControl.Parent = pn;
                         userControl.Dock = DockStyle.Fill;
                         userControl.Anchor = AnchorStyles.Right;
-                        userControl.Width = tabControl1.Width - 10;
-                        userControl.Height = tabControl1.Height - 10;
+                        // userControl.Width = tabControl1.Width - 10;
+                        //userControl.Height = tabControl1.Height - 10;
                         userControl.Show();
                         pn.Controls.Add(userControl);
                     }

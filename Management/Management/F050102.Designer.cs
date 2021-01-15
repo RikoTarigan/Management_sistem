@@ -71,7 +71,61 @@
             this.Detail = new System.Windows.Forms.GroupBox();
             this.cbxJenisJaminan = new System.Windows.Forms.ComboBox();
             this.cbxCollector = new System.Windows.Forms.ComboBox();
+            this.ds_data = new System.Data.DataSet();
+            this.dataTable1 = new System.Data.DataTable();
+            this.dataColumn1 = new System.Data.DataColumn();
+            this.dataColumn2 = new System.Data.DataColumn();
+            this.dataColumn3 = new System.Data.DataColumn();
+            this.dataColumn4 = new System.Data.DataColumn();
+            this.dataColumn5 = new System.Data.DataColumn();
+            this.dataColumn6 = new System.Data.DataColumn();
+            this.dataColumn7 = new System.Data.DataColumn();
+            this.dataColumn8 = new System.Data.DataColumn();
+            this.dataColumn9 = new System.Data.DataColumn();
+            this.dataColumn10 = new System.Data.DataColumn();
+            this.dataColumn11 = new System.Data.DataColumn();
+            this.dataColumn12 = new System.Data.DataColumn();
+            this.dataColumn13 = new System.Data.DataColumn();
+            this.dataColumn14 = new System.Data.DataColumn();
+            this.dataColumn15 = new System.Data.DataColumn();
+            this.dataColumn16 = new System.Data.DataColumn();
+            this.dataColumn17 = new System.Data.DataColumn();
+            this.dataColumn18 = new System.Data.DataColumn();
+            this.dataColumn19 = new System.Data.DataColumn();
+            this.dataColumn20 = new System.Data.DataColumn();
+            this.dataColumn21 = new System.Data.DataColumn();
+            this.dataColumn22 = new System.Data.DataColumn();
+            this.dataColumn23 = new System.Data.DataColumn();
+            this.dataColumn24 = new System.Data.DataColumn();
+            this.dataColumn25 = new System.Data.DataColumn();
+            this.dataColumn26 = new System.Data.DataColumn();
+            this.dataColumn27 = new System.Data.DataColumn();
+            this.dataTable2 = new System.Data.DataTable();
+            this.dataColumn28 = new System.Data.DataColumn();
+            this.dataColumn29 = new System.Data.DataColumn();
+            this.dataColumn30 = new System.Data.DataColumn();
+            this.dataColumn31 = new System.Data.DataColumn();
+            this.dataColumn32 = new System.Data.DataColumn();
+            this.dataColumn33 = new System.Data.DataColumn();
+            this.dataColumn34 = new System.Data.DataColumn();
+            this.dataColumn35 = new System.Data.DataColumn();
+            this.dataColumn36 = new System.Data.DataColumn();
+            this.dataTable3 = new System.Data.DataTable();
+            this.dataColumn37 = new System.Data.DataColumn();
+            this.dataColumn38 = new System.Data.DataColumn();
+            this.dataColumn39 = new System.Data.DataColumn();
+            this.dataColumn40 = new System.Data.DataColumn();
+            this.dataColumn42 = new System.Data.DataColumn();
+            this.dataColumn41 = new System.Data.DataColumn();
+            this.dataColumn43 = new System.Data.DataColumn();
+            this.dataTable4 = new System.Data.DataTable();
+            this.dataColumn44 = new System.Data.DataColumn();
             this.Detail.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ds_data)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable4)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSave
@@ -484,6 +538,255 @@
             this.cbxCollector.Size = new System.Drawing.Size(306, 21);
             this.cbxCollector.TabIndex = 12;
             // 
+            // ds_data
+            // 
+            this.ds_data.DataSetName = "NewDataSet";
+            this.ds_data.Tables.AddRange(new System.Data.DataTable[] {
+            this.dataTable1,
+            this.dataTable2,
+            this.dataTable3,
+            this.dataTable4});
+            // 
+            // dataTable1
+            // 
+            this.dataTable1.Columns.AddRange(new System.Data.DataColumn[] {
+            this.dataColumn1,
+            this.dataColumn2,
+            this.dataColumn3,
+            this.dataColumn4,
+            this.dataColumn5,
+            this.dataColumn6,
+            this.dataColumn7,
+            this.dataColumn8,
+            this.dataColumn9,
+            this.dataColumn10,
+            this.dataColumn11,
+            this.dataColumn12,
+            this.dataColumn13,
+            this.dataColumn14,
+            this.dataColumn15,
+            this.dataColumn16,
+            this.dataColumn17,
+            this.dataColumn18,
+            this.dataColumn19,
+            this.dataColumn20,
+            this.dataColumn21,
+            this.dataColumn22,
+            this.dataColumn23,
+            this.dataColumn24,
+            this.dataColumn25,
+            this.dataColumn26,
+            this.dataColumn27});
+            this.dataTable1.TableName = "NASABAH";
+            // 
+            // dataColumn1
+            // 
+            this.dataColumn1.ColumnName = "NAMA_COSTUMER";
+            // 
+            // dataColumn2
+            // 
+            this.dataColumn2.ColumnName = "NO_KTP";
+            // 
+            // dataColumn3
+            // 
+            this.dataColumn3.ColumnName = "NO_KK";
+            // 
+            // dataColumn4
+            // 
+            this.dataColumn4.ColumnName = "AGAMA";
+            // 
+            // dataColumn5
+            // 
+            this.dataColumn5.ColumnName = "TEMPAT_LAHIR";
+            // 
+            // dataColumn6
+            // 
+            this.dataColumn6.ColumnName = "TANGGAL_LAHIR";
+            // 
+            // dataColumn7
+            // 
+            this.dataColumn7.ColumnName = "JK";
+            // 
+            // dataColumn8
+            // 
+            this.dataColumn8.ColumnName = "ALAMAT_KTP";
+            // 
+            // dataColumn9
+            // 
+            this.dataColumn9.ColumnName = "ALAMAT_DOMISILI";
+            // 
+            // dataColumn10
+            // 
+            this.dataColumn10.ColumnName = "TELP";
+            // 
+            // dataColumn11
+            // 
+            this.dataColumn11.ColumnName = "PEKERJAAN";
+            // 
+            // dataColumn12
+            // 
+            this.dataColumn12.ColumnName = "NAMA_IBU_KANDUNG";
+            // 
+            // dataColumn13
+            // 
+            this.dataColumn13.ColumnName = "TANGGAL_LAHIR_IBU";
+            // 
+            // dataColumn14
+            // 
+            this.dataColumn14.ColumnName = "NAMA_USAHA";
+            // 
+            // dataColumn15
+            // 
+            this.dataColumn15.ColumnName = "ALAMAT_UsAHA";
+            // 
+            // dataColumn16
+            // 
+            this.dataColumn16.ColumnName = "JENIS_USAHA";
+            // 
+            // dataColumn17
+            // 
+            this.dataColumn17.ColumnName = "NAMA_BANK";
+            // 
+            // dataColumn18
+            // 
+            this.dataColumn18.ColumnName = "NO_REKENING";
+            // 
+            // dataColumn19
+            // 
+            this.dataColumn19.ColumnName = "NAMA_REKENING";
+            // 
+            // dataColumn20
+            // 
+            this.dataColumn20.ColumnName = "NAMA_SALES";
+            // 
+            // dataColumn21
+            // 
+            this.dataColumn21.ColumnName = "WILAYAH_AREA_TAGIH";
+            // 
+            // dataColumn22
+            // 
+            this.dataColumn22.ColumnName = "STATUS_APPL";
+            // 
+            // dataColumn23
+            // 
+            this.dataColumn23.ColumnName = "STATUS_MENIKAH";
+            // 
+            // dataColumn24
+            // 
+            this.dataColumn24.ColumnName = "NAMA_PASANGAN";
+            // 
+            // dataColumn25
+            // 
+            this.dataColumn25.ColumnName = "NO_KTP_PASANGAN";
+            // 
+            // dataColumn26
+            // 
+            this.dataColumn26.ColumnName = "ALAMAT_PASANGAN";
+            // 
+            // dataColumn27
+            // 
+            this.dataColumn27.ColumnName = "TELP_PASANGAN";
+            // 
+            // dataTable2
+            // 
+            this.dataTable2.Columns.AddRange(new System.Data.DataColumn[] {
+            this.dataColumn28,
+            this.dataColumn29,
+            this.dataColumn30,
+            this.dataColumn31,
+            this.dataColumn32,
+            this.dataColumn33,
+            this.dataColumn34,
+            this.dataColumn35,
+            this.dataColumn36});
+            this.dataTable2.TableName = "JAMINAN";
+            // 
+            // dataColumn28
+            // 
+            this.dataColumn28.ColumnName = "NO_JAMINAN";
+            // 
+            // dataColumn29
+            // 
+            this.dataColumn29.ColumnName = "JENIS_JAMINAN";
+            // 
+            // dataColumn30
+            // 
+            this.dataColumn30.ColumnName = "NO_ANGGOTA";
+            // 
+            // dataColumn31
+            // 
+            this.dataColumn31.ColumnName = "TANGGAL_MASUK";
+            // 
+            // dataColumn32
+            // 
+            this.dataColumn32.ColumnName = "NAMA_BARANG";
+            // 
+            // dataColumn33
+            // 
+            this.dataColumn33.ColumnName = "TIPE_BARANG";
+            // 
+            // dataColumn34
+            // 
+            this.dataColumn34.ColumnName = "KET1";
+            // 
+            // dataColumn35
+            // 
+            this.dataColumn35.ColumnName = "KET2";
+            // 
+            // dataColumn36
+            // 
+            this.dataColumn36.ColumnName = "NAMA_COLLECTOR";
+            // 
+            // dataTable3
+            // 
+            this.dataTable3.Columns.AddRange(new System.Data.DataColumn[] {
+            this.dataColumn37,
+            this.dataColumn38,
+            this.dataColumn39,
+            this.dataColumn40,
+            this.dataColumn42,
+            this.dataColumn41,
+            this.dataColumn43});
+            this.dataTable3.TableName = "SALES";
+            // 
+            // dataColumn37
+            // 
+            this.dataColumn37.ColumnName = "Stts";
+            // 
+            // dataColumn38
+            // 
+            this.dataColumn38.ColumnName = "Chk";
+            // 
+            // dataColumn39
+            // 
+            this.dataColumn39.ColumnName = "SALES_ID";
+            // 
+            // dataColumn40
+            // 
+            this.dataColumn40.ColumnName = "NM_SALES";
+            // 
+            // dataColumn42
+            // 
+            this.dataColumn42.ColumnName = "TELP_SALES";
+            // 
+            // dataColumn41
+            // 
+            this.dataColumn41.ColumnName = "ALAMAT_SALES";
+            // 
+            // dataColumn43
+            // 
+            this.dataColumn43.ColumnName = "IS_ACTIVE";
+            // 
+            // dataTable4
+            // 
+            this.dataTable4.Columns.AddRange(new System.Data.DataColumn[] {
+            this.dataColumn44});
+            this.dataTable4.TableName = "collector";
+            // 
+            // dataColumn44
+            // 
+            this.dataColumn44.ColumnName = "NM_COLLECTOR";
+            // 
             // F050102
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -520,6 +823,11 @@
             this.Load += new System.EventHandler(this.F050102_Load);
             this.Detail.ResumeLayout(false);
             this.Detail.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ds_data)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -568,5 +876,54 @@
         private System.Windows.Forms.GroupBox Detail;
         private System.Windows.Forms.ComboBox cbxJenisJaminan;
         private System.Windows.Forms.ComboBox cbxCollector;
+        public System.Data.DataSet ds_data;
+        private System.Data.DataTable dataTable1;
+        private System.Data.DataColumn dataColumn1;
+        private System.Data.DataColumn dataColumn2;
+        private System.Data.DataColumn dataColumn3;
+        private System.Data.DataColumn dataColumn4;
+        private System.Data.DataColumn dataColumn5;
+        private System.Data.DataColumn dataColumn6;
+        private System.Data.DataColumn dataColumn7;
+        private System.Data.DataColumn dataColumn8;
+        private System.Data.DataColumn dataColumn9;
+        private System.Data.DataColumn dataColumn10;
+        private System.Data.DataColumn dataColumn11;
+        private System.Data.DataColumn dataColumn12;
+        private System.Data.DataColumn dataColumn13;
+        private System.Data.DataColumn dataColumn14;
+        private System.Data.DataColumn dataColumn15;
+        private System.Data.DataColumn dataColumn16;
+        private System.Data.DataColumn dataColumn17;
+        private System.Data.DataColumn dataColumn18;
+        private System.Data.DataColumn dataColumn19;
+        private System.Data.DataColumn dataColumn20;
+        private System.Data.DataColumn dataColumn21;
+        private System.Data.DataColumn dataColumn22;
+        private System.Data.DataColumn dataColumn23;
+        private System.Data.DataColumn dataColumn24;
+        private System.Data.DataColumn dataColumn25;
+        private System.Data.DataColumn dataColumn26;
+        private System.Data.DataColumn dataColumn27;
+        private System.Data.DataTable dataTable2;
+        private System.Data.DataColumn dataColumn28;
+        private System.Data.DataColumn dataColumn29;
+        private System.Data.DataColumn dataColumn30;
+        private System.Data.DataColumn dataColumn31;
+        private System.Data.DataColumn dataColumn32;
+        private System.Data.DataColumn dataColumn33;
+        private System.Data.DataColumn dataColumn34;
+        private System.Data.DataColumn dataColumn35;
+        private System.Data.DataColumn dataColumn36;
+        private System.Data.DataTable dataTable3;
+        private System.Data.DataColumn dataColumn37;
+        private System.Data.DataColumn dataColumn38;
+        private System.Data.DataColumn dataColumn39;
+        private System.Data.DataColumn dataColumn40;
+        private System.Data.DataColumn dataColumn42;
+        private System.Data.DataColumn dataColumn41;
+        private System.Data.DataColumn dataColumn43;
+        private System.Data.DataTable dataTable4;
+        private System.Data.DataColumn dataColumn44;
     }
 }

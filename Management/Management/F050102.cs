@@ -51,6 +51,20 @@ namespace Management
                 }
             }
             //comboBox1.SelectedIndex = 0;
+            ds_data.Clear();
+            DataTable dataTable;
+            connection c = new connection();
+            MySqlDataAdapter ds = new MySqlDataAdapter("SELECT `NM_COLLECTOR` FROM `collector`", c.connetionString);
+            ds.Fill(ds_data, "collector");
+
+            dataTable = ds_data.Tables["collector"];
+            for (int i = 0; i < dataTable.Rows.Count; i++)
+            {
+                cbxCollector.Items.Add(dataTable.Rows[i].Field<string>(0));
+            }
+            if (cbxCollector.Items.Count > 0)
+                cbxCollector.SelectedIndex = 0;
+
             Clear();
         }
         private void Clear()

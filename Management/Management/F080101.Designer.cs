@@ -1,6 +1,6 @@
 ﻿namespace Management
 {
-    partial class F080102
+    partial class F080101
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtNamaSales = new System.Windows.Forms.TextBox();
+            this.txtNamacollector = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.txtNomorHp = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtNamaSalesEdit = new System.Windows.Forms.TextBox();
+            this.txtNamacollectorEdit = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnCari = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -89,7 +89,7 @@
             this.dataColumn43 = new System.Data.DataColumn();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtSalesID = new System.Windows.Forms.TextBox();
+            this.txtcollectorID = new System.Windows.Forms.TextBox();
             this.rtxAlamat = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.cbxIsActive = new System.Windows.Forms.ComboBox();
@@ -100,14 +100,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtNamaSales
+            // txtNamacollector
             // 
-            this.txtNamaSales.Location = new System.Drawing.Point(74, 2);
-            this.txtNamaSales.Margin = new System.Windows.Forms.Padding(2);
-            this.txtNamaSales.Multiline = true;
-            this.txtNamaSales.Name = "txtNamaSales";
-            this.txtNamaSales.Size = new System.Drawing.Size(239, 29);
-            this.txtNamaSales.TabIndex = 1;
+            this.txtNamacollector.Location = new System.Drawing.Point(83, 2);
+            this.txtNamacollector.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNamacollector.Multiline = true;
+            this.txtNamacollector.Name = "txtNamacollector";
+            this.txtNamacollector.Size = new System.Drawing.Size(239, 29);
+            this.txtNamacollector.TabIndex = 1;
             // 
             // label6
             // 
@@ -115,9 +115,9 @@
             this.label6.Location = new System.Drawing.Point(6, 9);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 13);
+            this.label6.Size = new System.Drawing.Size(78, 13);
             this.label6.TabIndex = 36;
-            this.label6.Text = "Nama Sales";
+            this.label6.Text = "Nama collector";
             // 
             // button1
             // 
@@ -134,7 +134,7 @@
             // txtNomorHp
             // 
             this.txtNomorHp.Enabled = false;
-            this.txtNomorHp.Location = new System.Drawing.Point(80, 410);
+            this.txtNomorHp.Location = new System.Drawing.Point(94, 410);
             this.txtNomorHp.Margin = new System.Windows.Forms.Padding(2);
             this.txtNomorHp.Name = "txtNomorHp";
             this.txtNomorHp.Size = new System.Drawing.Size(228, 20);
@@ -144,7 +144,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(37, 413);
+            this.label5.Location = new System.Drawing.Point(51, 413);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(39, 13);
@@ -154,22 +154,22 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(312, 389);
+            this.label4.Location = new System.Drawing.Point(329, 389);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(45, 13);
             this.label4.TabIndex = 32;
             this.label4.Text = "Wilayah";
             // 
-            // txtNamaSalesEdit
+            // txtNamacollectorEdit
             // 
-            this.txtNamaSalesEdit.Enabled = false;
-            this.txtNamaSalesEdit.Location = new System.Drawing.Point(80, 386);
-            this.txtNamaSalesEdit.Margin = new System.Windows.Forms.Padding(2);
-            this.txtNamaSalesEdit.Name = "txtNamaSalesEdit";
-            this.txtNamaSalesEdit.Size = new System.Drawing.Size(228, 20);
-            this.txtNamaSalesEdit.TabIndex = 7;
-            this.txtNamaSalesEdit.Leave += new System.EventHandler(this.textChanged);
+            this.txtNamacollectorEdit.Enabled = false;
+            this.txtNamacollectorEdit.Location = new System.Drawing.Point(94, 386);
+            this.txtNamacollectorEdit.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNamacollectorEdit.Name = "txtNamacollectorEdit";
+            this.txtNamacollectorEdit.Size = new System.Drawing.Size(228, 20);
+            this.txtNamacollectorEdit.TabIndex = 7;
+            this.txtNamacollectorEdit.Leave += new System.EventHandler(this.textChanged);
             // 
             // label2
             // 
@@ -177,14 +177,14 @@
             this.label2.Location = new System.Drawing.Point(14, 386);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 13);
+            this.label2.Size = new System.Drawing.Size(78, 13);
             this.label2.TabIndex = 28;
-            this.label2.Text = "Nama Sales";
+            this.label2.Text = "Nama collector";
             // 
             // btnCari
             // 
             this.btnCari.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCari.Location = new System.Drawing.Point(303, 2);
+            this.btnCari.Location = new System.Drawing.Point(312, 2);
             this.btnCari.Name = "btnCari";
             this.btnCari.Size = new System.Drawing.Size(55, 29);
             this.btnCari.TabIndex = 2;
@@ -197,28 +197,28 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(8, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 13);
+            this.label1.Size = new System.Drawing.Size(73, 13);
             this.label1.TabIndex = 41;
-            this.label1.Text = "Data Sales";
+            this.label1.Text = "Data collector";
             // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(9, 319);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(125, 23);
+            this.button2.Size = new System.Drawing.Size(147, 23);
             this.button2.TabIndex = 4;
-            this.button2.Text = "+  Tambah Sales Baru";
+            this.button2.Text = "+  Tambah collector Baru";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(140, 319);
+            this.button3.Location = new System.Drawing.Point(162, 319);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(91, 23);
+            this.button3.Size = new System.Drawing.Size(115, 23);
             this.button3.TabIndex = 5;
-            this.button3.Text = "-   Hapus Sales";
+            this.button3.Text = "-   Hapus collector";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -341,7 +341,7 @@
             // 
             // dataColumn20
             // 
-            this.dataColumn20.ColumnName = "NAMA_SALES";
+            this.dataColumn20.ColumnName = "NAMA_collector";
             // 
             // dataColumn21
             // 
@@ -431,7 +431,7 @@
             this.dataColumn42,
             this.dataColumn41,
             this.dataColumn43});
-            this.dataTable3.TableName = "SALES";
+            this.dataTable3.TableName = "collector";
             // 
             // dataColumn37
             // 
@@ -443,19 +443,19 @@
             // 
             // dataColumn39
             // 
-            this.dataColumn39.ColumnName = "SALES_ID";
+            this.dataColumn39.ColumnName = "collector_ID";
             // 
             // dataColumn40
             // 
-            this.dataColumn40.ColumnName = "NM_SALES";
+            this.dataColumn40.ColumnName = "NM_collector";
             // 
             // dataColumn42
             // 
-            this.dataColumn42.ColumnName = "TELP_SALES";
+            this.dataColumn42.ColumnName = "TELP_collector";
             // 
             // dataColumn41
             // 
-            this.dataColumn41.ColumnName = "ALAMAT_SALES";
+            this.dataColumn41.ColumnName = "ALAMAT_collector";
             // 
             // dataColumn43
             // 
@@ -485,41 +485,41 @@
             this.label3.Location = new System.Drawing.Point(29, 365);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 13);
+            this.label3.Size = new System.Drawing.Size(61, 13);
             this.label3.TabIndex = 28;
-            this.label3.Text = "Sales ID";
+            this.label3.Text = "collector ID";
             // 
-            // txtSalesID
+            // txtcollectorID
             // 
-            this.txtSalesID.Enabled = false;
-            this.txtSalesID.Location = new System.Drawing.Point(80, 362);
-            this.txtSalesID.Margin = new System.Windows.Forms.Padding(2);
-            this.txtSalesID.Name = "txtSalesID";
-            this.txtSalesID.Size = new System.Drawing.Size(228, 20);
-            this.txtSalesID.TabIndex = 6;
-            this.txtSalesID.Leave += new System.EventHandler(this.textChanged);
+            this.txtcollectorID.Enabled = false;
+            this.txtcollectorID.Location = new System.Drawing.Point(94, 362);
+            this.txtcollectorID.Margin = new System.Windows.Forms.Padding(2);
+            this.txtcollectorID.Name = "txtcollectorID";
+            this.txtcollectorID.Size = new System.Drawing.Size(228, 20);
+            this.txtcollectorID.TabIndex = 6;
+            this.txtcollectorID.Leave += new System.EventHandler(this.textChanged);
             // 
             // rtxAlamat
             // 
             this.rtxAlamat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rtxAlamat.Enabled = false;
-            this.rtxAlamat.Location = new System.Drawing.Point(363, 386);
+            this.rtxAlamat.Location = new System.Drawing.Point(395, 384);
             this.rtxAlamat.Multiline = true;
             this.rtxAlamat.Name = "rtxAlamat";
-            this.rtxAlamat.Size = new System.Drawing.Size(351, 53);
+            this.rtxAlamat.Size = new System.Drawing.Size(319, 53);
             this.rtxAlamat.TabIndex = 9;
             this.rtxAlamat.Leave += new System.EventHandler(this.textChanged);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(312, 362);
+            this.label7.Location = new System.Drawing.Point(329, 362);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(47, 13);
+            this.label7.Size = new System.Drawing.Size(61, 13);
             this.label7.TabIndex = 28;
-            this.label7.Text = "Sales ID";
+            this.label7.Text = "collector ID";
             // 
             // cbxIsActive
             // 
@@ -527,12 +527,12 @@
             this.cbxIsActive.Items.AddRange(new object[] {
             "AKTIF",
             "TIDAK AKTIF"});
-            this.cbxIsActive.Location = new System.Drawing.Point(363, 356);
+            this.cbxIsActive.Location = new System.Drawing.Point(395, 357);
             this.cbxIsActive.Name = "cbxIsActive";
             this.cbxIsActive.Size = new System.Drawing.Size(121, 21);
             this.cbxIsActive.TabIndex = 42;
             // 
-            // F080102
+            // F080101
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -543,20 +543,20 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCari);
-            this.Controls.Add(this.txtNamaSales);
+            this.Controls.Add(this.txtNamacollector);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtNomorHp);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtSalesID);
+            this.Controls.Add(this.txtcollectorID);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtNamaSalesEdit);
+            this.Controls.Add(this.txtNamacollectorEdit);
             this.Controls.Add(this.label2);
-            this.Name = "F080102";
+            this.Name = "F080101";
             this.Size = new System.Drawing.Size(737, 489);
-            this.Load += new System.EventHandler(this.F080102_Load);
+            this.Load += new System.EventHandler(this.F080101_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ds_data)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataTable2)).EndInit();
@@ -568,18 +568,52 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox txtNamaSales;
+
+        private System.Windows.Forms.Label label7;
+        private System.Data.DataColumn dataColumn21;
+        private System.Data.DataColumn dataColumn22;
+        private System.Data.DataColumn dataColumn23;
+        private System.Data.DataColumn dataColumn24;
+        private System.Data.DataColumn dataColumn25;
+        private System.Data.DataColumn dataColumn26;
+        private System.Data.DataColumn dataColumn27;
+        private System.Data.DataTable dataTable2;
+        private System.Data.DataColumn dataColumn28;
+        private System.Data.DataColumn dataColumn29;
+        private System.Data.DataColumn dataColumn30;
+        private System.Data.DataColumn dataColumn31;
+        private System.Data.DataColumn dataColumn32;
+        private System.Data.DataColumn dataColumn33;
+        private System.Data.DataColumn dataColumn34;
+        private System.Data.DataColumn dataColumn35;
+        private System.Data.DataColumn dataColumn36;
+        private System.Data.DataTable dataTable3;
+        private System.Data.DataColumn dataColumn37;
+        private System.Data.DataColumn dataColumn38;
+        private System.Data.DataColumn dataColumn39;
+        private System.Data.DataColumn dataColumn40;
+        private System.Data.DataColumn dataColumn42;
+        private System.Data.DataColumn dataColumn41;
+        private System.Data.DataColumn dataColumn43;
+        private System.Windows.Forms.TextBox rtxAlamat;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtcollectorID;
+        private System.Windows.Forms.Label label3;
+        private System.Data.DataColumn dataColumn20;
+        private System.Windows.Forms.ComboBox cbxIsActive;
+        private System.Data.DataColumn dataColumn19;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnCari;
+        private System.Windows.Forms.TextBox txtNamacollector;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtNomorHp;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtNamaSalesEdit;
+        private System.Windows.Forms.TextBox txtNamacollectorEdit;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnCari;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
         public System.Data.DataSet ds_data;
         private System.Data.DataTable dataTable1;
         private System.Data.DataColumn dataColumn1;
@@ -600,38 +634,5 @@
         private System.Data.DataColumn dataColumn16;
         private System.Data.DataColumn dataColumn17;
         private System.Data.DataColumn dataColumn18;
-        private System.Data.DataColumn dataColumn19;
-        private System.Data.DataColumn dataColumn20;
-        private System.Data.DataColumn dataColumn21;
-        private System.Data.DataColumn dataColumn22;
-        private System.Data.DataColumn dataColumn23;
-        private System.Data.DataColumn dataColumn24;
-        private System.Data.DataColumn dataColumn25;
-        private System.Data.DataColumn dataColumn26;
-        private System.Data.DataColumn dataColumn27;
-        private System.Data.DataTable dataTable2;
-        private System.Data.DataColumn dataColumn28;
-        private System.Data.DataColumn dataColumn29;
-        private System.Data.DataColumn dataColumn30;
-        private System.Data.DataColumn dataColumn31;
-        private System.Data.DataColumn dataColumn32;
-        private System.Data.DataColumn dataColumn33;
-        private System.Data.DataColumn dataColumn34;
-        private System.Data.DataColumn dataColumn35;
-        private System.Data.DataColumn dataColumn36;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Data.DataTable dataTable3;
-        private System.Data.DataColumn dataColumn37;
-        private System.Data.DataColumn dataColumn38;
-        private System.Data.DataColumn dataColumn39;
-        private System.Data.DataColumn dataColumn40;
-        private System.Data.DataColumn dataColumn42;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtSalesID;
-        private System.Windows.Forms.TextBox rtxAlamat;
-        private System.Data.DataColumn dataColumn41;
-        private System.Data.DataColumn dataColumn43;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox cbxIsActive;
     }
 }

@@ -64,3 +64,4 @@ E:\Belajar\C# .net\Management\Management\Management\obj\Debug\Management.F060101
 E:\Belajar\C# .net\Management\Management\Management\obj\Debug\Management.F080102.resources
 E:\Belajar\C# .net\Management\Management\Management\obj\Debug\Management.PopUp.resources
 E:\Belajar\C# .net\Management\Management\Management\obj\Debug\Management.popupjaminan.resources
+E:\Belajar\C# .net\Management\Management\Management\obj\Debug\Management.F080101.resources
