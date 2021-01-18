@@ -33,7 +33,45 @@ namespace Management
 
         private void F050105_Load(object sender, EventArgs e)
         {
+            rdbHarian.Checked = true; //initial radio button cheked
 
+
+            
+            //Collector load
+            ds_data.Clear();
+            DataTable dataTable;
+            connection c = new connection();
+            MySqlDataAdapter ds = new MySqlDataAdapter("SELECT `NM_COLLECTOR` FROM `collector`", c.connetionString);
+            ds.Fill(ds_data, "collector");
+
+            dataTable = ds_data.Tables["collector"];
+            for (int i = 0; i < dataTable.Rows.Count; i++)
+            {
+                cbxCollector.Items.Add(dataTable.Rows[i].Field<string>(0));
+            }
+            if (cbxCollector.Items.Count > 0)
+                cbxCollector.SelectedIndex = 0;
+
+            //sales load
+            dataTable.Clear();
+            ds = null;
+            ds = new MySqlDataAdapter("SELECT  `SALES_ID`, `NM_SALES` FROM `sales`", c.connetionString);
+            ds.Fill(ds_data, "SALES");
+
+            dataTable = ds_data.Tables["SALES"];
+            for (int i = 0; i < dataTable.Rows.Count; i++)
+            {
+                namasales.Items.Add(dataTable.Rows[i].Field<string>(1));
+            }
+            if (namasales.Items.Count > 0)
+                namasales.SelectedIndex = 0;
+            nud.Value = 0;
+            nud.ValueChanged += new EventHandler(rowAffected);
+
+        }
+        private void rowAffected(object sender,EventArgs e)
+        {
+            MessageBox.Show("Data Tersimpan","INFORMASI",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
         public static string val="";
 
@@ -62,6 +100,70 @@ namespace Management
         private void txtNamaCustomer_TextChanged(object sender, EventArgs e)
         {
             timer1.Stop();
+        }
+
+        private void label54_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        string message = "";
+        NumericUpDown nud = new NumericUpDown();
+        private void button1_Click(object sender, EventArgs e)
+        {
+            message = "";
+            nud.Value = 0;
+            if(!validation())
+            {
+                MessageBox.Show("Cek nilai masukan\n"+message,"Erorr",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            insertData();
+            //query insert here
+        }
+        private bool validation()
+        {
+            if (txtLokasiTagih.Text == "")
+            {
+                message += "Lokasi Tagih";
+                return false;
+            }
+            if(getTipePinjaman()=="")
+            {
+                message += "\nTipe Pinjaman";
+                return false;
+            }
+            //add Validation here
+            return true;
+        }
+        private string getTipePinjaman()
+        {
+            foreach (Control item in this.Controls)
+            {
+                if (item is RadioButton)
+                {
+                    RadioButton x = (RadioButton)item;
+                    if (x.Checked)
+                        return x.Text;
+                }
+            }
+            return "";
+        }
+        private void insertData()
+        {
+            string ket2 = "";
+            string query = "INSERT INTO `pinjaman`" +
+                "(`NM_NASABAH`, `NM_SALES`, `NM_COLLECTOR`, `JLH_PINJAMAN`,`TIPE_PINJAMAN`) " +
+                "VALUES " +
+                "('"+txtNamaCustomer.Text+"','"+namasales.Text+"','"+cbxCollector.Text+"',"+nudJlhPinjaman.Value+",'"+getTipePinjaman()+"')";
+            MySqlConnection cnn;
+            connection con = new connection();
+            cnn = new MySqlConnection(con.connetionString);
+            MySqlCommand cmd = cnn.CreateCommand();
+            cnn.Open();
+            cmd.CommandText = query;
+            nud.Value = cmd.ExecuteNonQuery();
+            cnn.Close();
         }
     }
 }

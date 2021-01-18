@@ -193,6 +193,21 @@ namespace Management
                     }
                 }    
             }
+
+            ds_data.Clear();
+            DataTable dataTable;
+            connection c = new connection();
+            MySqlDataAdapter ds = new MySqlDataAdapter("SELECT  `SALES_ID`, `NM_SALES`, `ALAMAT_SALES`, `TELP_SALES`, `IS_ACTIVE` FROM `sales`", c.connetionString);
+            ds.Fill(ds_data, "SALES");
+
+            dataTable = ds_data.Tables["SALES"];
+            for (int i = 0; i < dataTable.Rows.Count; i++)
+            {
+                namasales.Items.Add(dataTable.Rows[i].Field<string>(1));
+            }
+            if (namasales.Items.Count > 0)
+                namasales.SelectedIndex = 0;
+
         }
 
         private void item_Text(object sender, EventArgs e)

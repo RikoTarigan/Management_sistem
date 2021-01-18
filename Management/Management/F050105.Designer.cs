@@ -30,32 +30,28 @@
         {
             this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.namasales = new System.Windows.Forms.ComboBox();
             this.label54 = new System.Windows.Forms.Label();
-            this.textBox35 = new System.Windows.Forms.TextBox();
+            this.txtKet = new System.Windows.Forms.TextBox();
             this.label55 = new System.Windows.Forms.Label();
-            this.textBox34 = new System.Windows.Forms.TextBox();
+            this.txtLokasiTagih = new System.Windows.Forms.TextBox();
             this.label53 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cbxGrup = new System.Windows.Forms.ComboBox();
             this.label52 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbxCollector = new System.Windows.Forms.ComboBox();
             this.label51 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label50 = new System.Windows.Forms.Label();
-            this.textBox33 = new System.Windows.Forms.TextBox();
+            this.txtByAdmin = new System.Windows.Forms.TextBox();
             this.label49 = new System.Windows.Forms.Label();
             this.textBox32 = new System.Windows.Forms.TextBox();
             this.label48 = new System.Windows.Forms.Label();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
+            this.txtjlhbunga = new System.Windows.Forms.TextBox();
             this.label46 = new System.Windows.Forms.Label();
-            this.textBox29 = new System.Windows.Forms.TextBox();
             this.label45 = new System.Windows.Forms.Label();
-            this.textBox25 = new System.Windows.Forms.TextBox();
             this.label44 = new System.Windows.Forms.Label();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rdbBulanan = new System.Windows.Forms.RadioButton();
+            this.rdbMingguan = new System.Windows.Forms.RadioButton();
+            this.rdbHarian = new System.Windows.Forms.RadioButton();
             this.label43 = new System.Windows.Forms.Label();
             this.txtNoAnggota = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -91,6 +87,16 @@
             this.dataColumn25 = new System.Data.DataColumn();
             this.dataColumn26 = new System.Data.DataColumn();
             this.dataColumn27 = new System.Data.DataColumn();
+            this.dataTable2 = new System.Data.DataTable();
+            this.dataColumn28 = new System.Data.DataColumn();
+            this.dataColumn29 = new System.Data.DataColumn();
+            this.dataColumn30 = new System.Data.DataColumn();
+            this.dataColumn31 = new System.Data.DataColumn();
+            this.dataColumn32 = new System.Data.DataColumn();
+            this.dataColumn33 = new System.Data.DataColumn();
+            this.dataColumn34 = new System.Data.DataColumn();
+            this.dataColumn35 = new System.Data.DataColumn();
+            this.dataColumn36 = new System.Data.DataColumn();
             this.label11 = new System.Windows.Forms.Label();
             this.txtNomorKK = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -129,159 +135,158 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dataTable2 = new System.Data.DataTable();
-            this.dataColumn28 = new System.Data.DataColumn();
-            this.dataColumn29 = new System.Data.DataColumn();
-            this.dataColumn30 = new System.Data.DataColumn();
-            this.dataColumn31 = new System.Data.DataColumn();
-            this.dataColumn32 = new System.Data.DataColumn();
-            this.dataColumn33 = new System.Data.DataColumn();
-            this.dataColumn34 = new System.Data.DataColumn();
-            this.dataColumn35 = new System.Data.DataColumn();
-            this.dataColumn36 = new System.Data.DataColumn();
+            this.dataTable3 = new System.Data.DataTable();
+            this.dataColumn37 = new System.Data.DataColumn();
+            this.dataColumn38 = new System.Data.DataColumn();
+            this.dataTable4 = new System.Data.DataTable();
+            this.dataColumn39 = new System.Data.DataColumn();
+            this.nudJlhPinjaman = new System.Windows.Forms.NumericUpDown();
+            this.nudTenor = new System.Windows.Forms.NumericUpDown();
+            this.txtjlhbnga = new System.Windows.Forms.TextBox();
+            this.txtSuveryor = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.ds_data)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataTable1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable2)).BeginInit();
             this.DetailPasangan.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudJlhPinjaman)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudTenor)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(136, 486);
+            this.button1.Location = new System.Drawing.Point(23, 500);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(124, 31);
-            this.button1.TabIndex = 251;
+            this.button1.TabIndex = 15;
             this.button1.Text = "Simpan";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // comboBox4
+            // namasales
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(580, 378);
-            this.comboBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(122, 21);
-            this.comboBox4.TabIndex = 250;
+            this.namasales.FormattingEnabled = true;
+            this.namasales.Location = new System.Drawing.Point(569, 391);
+            this.namasales.Margin = new System.Windows.Forms.Padding(2);
+            this.namasales.Name = "namasales";
+            this.namasales.Size = new System.Drawing.Size(122, 21);
+            this.namasales.TabIndex = 14;
             // 
             // label54
             // 
             this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(542, 378);
+            this.label54.Location = new System.Drawing.Point(501, 395);
             this.label54.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(33, 13);
             this.label54.TabIndex = 249;
             this.label54.Text = "Sales";
+            this.label54.Click += new System.EventHandler(this.label54_Click);
             // 
-            // textBox35
+            // txtKet
             // 
-            this.textBox35.Location = new System.Drawing.Point(580, 359);
-            this.textBox35.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(123, 20);
-            this.textBox35.TabIndex = 248;
+            this.txtKet.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtKet.Location = new System.Drawing.Point(570, 417);
+            this.txtKet.Margin = new System.Windows.Forms.Padding(2);
+            this.txtKet.Multiline = true;
+            this.txtKet.Name = "txtKet";
+            this.txtKet.Size = new System.Drawing.Size(318, 83);
+            this.txtKet.TabIndex = 13;
             // 
             // label55
             // 
             this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(496, 361);
+            this.label55.Location = new System.Drawing.Point(486, 421);
             this.label55.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(80, 13);
             this.label55.TabIndex = 247;
             this.label55.Text = "Ket. Pot. Admin";
             // 
-            // textBox34
+            // txtLokasiTagih
             // 
-            this.textBox34.Location = new System.Drawing.Point(358, 445);
-            this.textBox34.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(123, 20);
-            this.textBox34.TabIndex = 246;
+            this.txtLokasiTagih.Location = new System.Drawing.Point(359, 480);
+            this.txtLokasiTagih.Margin = new System.Windows.Forms.Padding(2);
+            this.txtLokasiTagih.Name = "txtLokasiTagih";
+            this.txtLokasiTagih.Size = new System.Drawing.Size(123, 20);
+            this.txtLokasiTagih.TabIndex = 12;
             // 
             // label53
             // 
             this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(286, 447);
+            this.label53.Location = new System.Drawing.Point(287, 480);
             this.label53.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(68, 13);
             this.label53.TabIndex = 245;
             this.label53.Text = "Lokasi Tagih";
             // 
-            // comboBox3
+            // cbxGrup
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(358, 423);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(122, 21);
-            this.comboBox3.TabIndex = 244;
+            this.cbxGrup.FormattingEnabled = true;
+            this.cbxGrup.Location = new System.Drawing.Point(359, 458);
+            this.cbxGrup.Margin = new System.Windows.Forms.Padding(2);
+            this.cbxGrup.Name = "cbxGrup";
+            this.cbxGrup.Size = new System.Drawing.Size(123, 21);
+            this.cbxGrup.TabIndex = 11;
             // 
             // label52
             // 
             this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(314, 426);
+            this.label52.Location = new System.Drawing.Point(315, 459);
             this.label52.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(36, 13);
             this.label52.TabIndex = 243;
             this.label52.Text = "Group";
             // 
-            // comboBox2
+            // cbxCollector
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(358, 403);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(122, 21);
-            this.comboBox2.TabIndex = 242;
+            this.cbxCollector.FormattingEnabled = true;
+            this.cbxCollector.Location = new System.Drawing.Point(359, 435);
+            this.cbxCollector.Margin = new System.Windows.Forms.Padding(2);
+            this.cbxCollector.Name = "cbxCollector";
+            this.cbxCollector.Size = new System.Drawing.Size(123, 21);
+            this.cbxCollector.TabIndex = 10;
             // 
             // label51
             // 
             this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(303, 406);
+            this.label51.Location = new System.Drawing.Point(304, 439);
             this.label51.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(48, 13);
             this.label51.TabIndex = 241;
             this.label51.Text = "Collector";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(358, 381);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(122, 21);
-            this.comboBox1.TabIndex = 240;
-            // 
             // label50
             // 
             this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(303, 384);
+            this.label50.Location = new System.Drawing.Point(304, 417);
             this.label50.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(49, 13);
             this.label50.TabIndex = 239;
             this.label50.Text = "Surveyor";
             // 
-            // textBox33
+            // txtByAdmin
             // 
-            this.textBox33.Location = new System.Drawing.Point(358, 361);
-            this.textBox33.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(123, 20);
-            this.textBox33.TabIndex = 238;
+            this.txtByAdmin.Location = new System.Drawing.Point(359, 392);
+            this.txtByAdmin.Margin = new System.Windows.Forms.Padding(2);
+            this.txtByAdmin.Name = "txtByAdmin";
+            this.txtByAdmin.Size = new System.Drawing.Size(123, 20);
+            this.txtByAdmin.TabIndex = 8;
             // 
             // label49
             // 
             this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(303, 361);
+            this.label49.Location = new System.Drawing.Point(304, 394);
             this.label49.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(51, 13);
@@ -290,7 +295,7 @@
             // 
             // textBox32
             // 
-            this.textBox32.Location = new System.Drawing.Point(113, 427);
+            this.textBox32.Location = new System.Drawing.Point(114, 476);
             this.textBox32.Margin = new System.Windows.Forms.Padding(2);
             this.textBox32.Name = "textBox32";
             this.textBox32.Size = new System.Drawing.Size(123, 20);
@@ -299,115 +304,91 @@
             // label48
             // 
             this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(24, 428);
+            this.label48.Location = new System.Drawing.Point(25, 477);
             this.label48.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(88, 13);
             this.label48.TabIndex = 235;
             this.label48.Text = "Jumlah Angsuran";
             // 
-            // textBox31
+            // txtjlhbunga
             // 
-            this.textBox31.Location = new System.Drawing.Point(241, 403);
-            this.textBox31.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(44, 20);
-            this.textBox31.TabIndex = 234;
-            // 
-            // textBox30
-            // 
-            this.textBox30.Location = new System.Drawing.Point(113, 403);
-            this.textBox30.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(123, 20);
-            this.textBox30.TabIndex = 232;
+            this.txtjlhbunga.Location = new System.Drawing.Point(114, 449);
+            this.txtjlhbunga.Margin = new System.Windows.Forms.Padding(2);
+            this.txtjlhbunga.Name = "txtjlhbunga";
+            this.txtjlhbunga.Size = new System.Drawing.Size(120, 20);
+            this.txtjlhbunga.TabIndex = 6;
             // 
             // label46
             // 
             this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(35, 403);
+            this.label46.Location = new System.Drawing.Point(37, 451);
             this.label46.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(74, 13);
             this.label46.TabIndex = 231;
             this.label46.Text = "Jumlah Bunga";
             // 
-            // textBox29
-            // 
-            this.textBox29.Location = new System.Drawing.Point(113, 384);
-            this.textBox29.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(123, 20);
-            this.textBox29.TabIndex = 230;
-            // 
             // label45
             // 
             this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(74, 387);
+            this.label45.Location = new System.Drawing.Point(75, 427);
             this.label45.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(35, 13);
             this.label45.TabIndex = 229;
             this.label45.Text = "Tenor";
             // 
-            // textBox25
-            // 
-            this.textBox25.Location = new System.Drawing.Point(113, 364);
-            this.textBox25.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(123, 20);
-            this.textBox25.TabIndex = 228;
-            // 
             // label44
             // 
             this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(24, 365);
+            this.label44.Location = new System.Drawing.Point(25, 405);
             this.label44.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(86, 13);
             this.label44.TabIndex = 227;
             this.label44.Text = "Jumlah Pinjaman";
             // 
-            // radioButton3
+            // rdbBulanan
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(241, 343);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(2);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(64, 17);
-            this.radioButton3.TabIndex = 226;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Bulanan";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rdbBulanan.AutoSize = true;
+            this.rdbBulanan.Location = new System.Drawing.Point(242, 376);
+            this.rdbBulanan.Margin = new System.Windows.Forms.Padding(2);
+            this.rdbBulanan.Name = "rdbBulanan";
+            this.rdbBulanan.Size = new System.Drawing.Size(64, 17);
+            this.rdbBulanan.TabIndex = 226;
+            this.rdbBulanan.TabStop = true;
+            this.rdbBulanan.Text = "Bulanan";
+            this.rdbBulanan.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rdbMingguan
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(172, 343);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(2);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(72, 17);
-            this.radioButton2.TabIndex = 225;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Mingguan";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdbMingguan.AutoSize = true;
+            this.rdbMingguan.Location = new System.Drawing.Point(173, 376);
+            this.rdbMingguan.Margin = new System.Windows.Forms.Padding(2);
+            this.rdbMingguan.Name = "rdbMingguan";
+            this.rdbMingguan.Size = new System.Drawing.Size(72, 17);
+            this.rdbMingguan.TabIndex = 225;
+            this.rdbMingguan.TabStop = true;
+            this.rdbMingguan.Text = "Mingguan";
+            this.rdbMingguan.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rdbHarian
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(115, 343);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(2);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(56, 17);
-            this.radioButton1.TabIndex = 224;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Harian";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdbHarian.AutoSize = true;
+            this.rdbHarian.Location = new System.Drawing.Point(116, 376);
+            this.rdbHarian.Margin = new System.Windows.Forms.Padding(2);
+            this.rdbHarian.Name = "rdbHarian";
+            this.rdbHarian.Size = new System.Drawing.Size(56, 17);
+            this.rdbHarian.TabIndex = 3;
+            this.rdbHarian.TabStop = true;
+            this.rdbHarian.Text = "Harian";
+            this.rdbHarian.UseVisualStyleBackColor = true;
             // 
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(38, 343);
+            this.label43.Location = new System.Drawing.Point(39, 376);
             this.label43.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(74, 13);
@@ -418,15 +399,16 @@
             // 
             this.txtNoAnggota.Location = new System.Drawing.Point(114, 2);
             this.txtNoAnggota.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNoAnggota.Multiline = true;
             this.txtNoAnggota.Name = "txtNoAnggota";
-            this.txtNoAnggota.Size = new System.Drawing.Size(193, 20);
-            this.txtNoAnggota.TabIndex = 148;
+            this.txtNoAnggota.Size = new System.Drawing.Size(193, 28);
+            this.txtNoAnggota.TabIndex = 1;
             this.txtNoAnggota.TextChanged += new System.EventHandler(this.txtNoAnggota_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(44, 5);
+            this.label2.Location = new System.Drawing.Point(44, 9);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 13);
@@ -436,7 +418,7 @@
             // label47
             // 
             this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(35, 411);
+            this.label47.Location = new System.Drawing.Point(31, 461);
             this.label47.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(259, 13);
@@ -445,11 +427,12 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(278, 3);
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(307, 1);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(27, 17);
-            this.button3.TabIndex = 253;
-            this.button3.Text = "P";
+            this.button3.Size = new System.Drawing.Size(52, 29);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Cari";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -463,7 +446,9 @@
             this.ds_data.DataSetName = "NewDataSet";
             this.ds_data.Tables.AddRange(new System.Data.DataTable[] {
             this.dataTable1,
-            this.dataTable2});
+            this.dataTable2,
+            this.dataTable3,
+            this.dataTable4});
             // 
             // dataTable1
             // 
@@ -604,6 +589,56 @@
             // dataColumn27
             // 
             this.dataColumn27.ColumnName = "TELP_PASANGAN";
+            // 
+            // dataTable2
+            // 
+            this.dataTable2.Columns.AddRange(new System.Data.DataColumn[] {
+            this.dataColumn28,
+            this.dataColumn29,
+            this.dataColumn30,
+            this.dataColumn31,
+            this.dataColumn32,
+            this.dataColumn33,
+            this.dataColumn34,
+            this.dataColumn35,
+            this.dataColumn36});
+            this.dataTable2.TableName = "JAMINAN";
+            // 
+            // dataColumn28
+            // 
+            this.dataColumn28.ColumnName = "NO_JAMINAN";
+            // 
+            // dataColumn29
+            // 
+            this.dataColumn29.ColumnName = "JENIS_JAMINAN";
+            // 
+            // dataColumn30
+            // 
+            this.dataColumn30.ColumnName = "NO_ANGGOTA";
+            // 
+            // dataColumn31
+            // 
+            this.dataColumn31.ColumnName = "TANGGAL_MASUK";
+            // 
+            // dataColumn32
+            // 
+            this.dataColumn32.ColumnName = "NAMA_BARANG";
+            // 
+            // dataColumn33
+            // 
+            this.dataColumn33.ColumnName = "TIPE_BARANG";
+            // 
+            // dataColumn34
+            // 
+            this.dataColumn34.ColumnName = "KET1";
+            // 
+            // dataColumn35
+            // 
+            this.dataColumn35.ColumnName = "KET2";
+            // 
+            // dataColumn36
+            // 
+            this.dataColumn36.ColumnName = "NAMA_COLLECTOR";
             // 
             // label11
             // 
@@ -943,10 +978,10 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Location = new System.Drawing.Point(23, 217);
+            this.groupBox1.Location = new System.Drawing.Point(23, 221);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(989, 123);
-            this.groupBox1.TabIndex = 291;
+            this.groupBox1.Size = new System.Drawing.Size(989, 152);
+            this.groupBox1.TabIndex = 100;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "JAMINAN";
             // 
@@ -955,7 +990,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(6, 19);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(977, 98);
+            this.dataGridView1.Size = new System.Drawing.Size(977, 127);
             this.dataGridView1.TabIndex = 0;
             // 
             // textBox1
@@ -995,97 +1030,106 @@
             this.groupBox2.Controls.Add(this.txtNamaIbuKandung);
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Location = new System.Drawing.Point(23, 27);
+            this.groupBox2.Location = new System.Drawing.Point(23, 32);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(983, 184);
-            this.groupBox2.TabIndex = 293;
+            this.groupBox2.TabIndex = 99;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "DETAIL ANGGOTA";
             // 
-            // dataTable2
+            // dataTable3
             // 
-            this.dataTable2.Columns.AddRange(new System.Data.DataColumn[] {
-            this.dataColumn28,
-            this.dataColumn29,
-            this.dataColumn30,
-            this.dataColumn31,
-            this.dataColumn32,
-            this.dataColumn33,
-            this.dataColumn34,
-            this.dataColumn35,
-            this.dataColumn36});
-            this.dataTable2.TableName = "JAMINAN";
+            this.dataTable3.Columns.AddRange(new System.Data.DataColumn[] {
+            this.dataColumn37,
+            this.dataColumn38});
+            this.dataTable3.TableName = "SALES";
             // 
-            // dataColumn28
+            // dataColumn37
             // 
-            this.dataColumn28.ColumnName = "NO_JAMINAN";
+            this.dataColumn37.ColumnName = "SALES_ID";
             // 
-            // dataColumn29
+            // dataColumn38
             // 
-            this.dataColumn29.ColumnName = "JENIS_JAMINAN";
+            this.dataColumn38.ColumnName = "NM_SALES";
             // 
-            // dataColumn30
+            // dataTable4
             // 
-            this.dataColumn30.ColumnName = "NO_ANGGOTA";
+            this.dataTable4.Columns.AddRange(new System.Data.DataColumn[] {
+            this.dataColumn39});
+            this.dataTable4.TableName = "COLLECTOR";
             // 
-            // dataColumn31
+            // dataColumn39
             // 
-            this.dataColumn31.ColumnName = "TANGGAL_MASUK";
+            this.dataColumn39.ColumnName = "NM_COLLECTOR";
             // 
-            // dataColumn32
+            // nudJlhPinjaman
             // 
-            this.dataColumn32.ColumnName = "NAMA_BARANG";
+            this.nudJlhPinjaman.Location = new System.Drawing.Point(114, 403);
+            this.nudJlhPinjaman.Maximum = new decimal(new int[] {
+            100000000,
+            0,
+            0,
+            0});
+            this.nudJlhPinjaman.Name = "nudJlhPinjaman";
+            this.nudJlhPinjaman.Size = new System.Drawing.Size(120, 20);
+            this.nudJlhPinjaman.TabIndex = 4;
+            this.nudJlhPinjaman.ThousandsSeparator = true;
             // 
-            // dataColumn33
+            // nudTenor
             // 
-            this.dataColumn33.ColumnName = "TIPE_BARANG";
+            this.nudTenor.Location = new System.Drawing.Point(114, 425);
+            this.nudTenor.Name = "nudTenor";
+            this.nudTenor.Size = new System.Drawing.Size(120, 20);
+            this.nudTenor.TabIndex = 5;
             // 
-            // dataColumn34
+            // txtjlhbnga
             // 
-            this.dataColumn34.ColumnName = "KET1";
+            this.txtjlhbnga.Location = new System.Drawing.Point(240, 449);
+            this.txtjlhbnga.Name = "txtjlhbnga";
+            this.txtjlhbnga.Size = new System.Drawing.Size(45, 20);
+            this.txtjlhbnga.TabIndex = 7;
             // 
-            // dataColumn35
+            // txtSuveryor
             // 
-            this.dataColumn35.ColumnName = "KET2";
-            // 
-            // dataColumn36
-            // 
-            this.dataColumn36.ColumnName = "NAMA_COLLECTOR";
+            this.txtSuveryor.Location = new System.Drawing.Point(359, 414);
+            this.txtSuveryor.Name = "txtSuveryor";
+            this.txtSuveryor.Size = new System.Drawing.Size(123, 20);
+            this.txtSuveryor.TabIndex = 9;
             // 
             // F050105
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.txtSuveryor);
+            this.Controls.Add(this.txtjlhbnga);
+            this.Controls.Add(this.nudTenor);
+            this.Controls.Add(this.nudJlhPinjaman);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.namasales);
             this.Controls.Add(this.label54);
-            this.Controls.Add(this.textBox35);
+            this.Controls.Add(this.txtKet);
             this.Controls.Add(this.label55);
-            this.Controls.Add(this.textBox34);
+            this.Controls.Add(this.txtLokasiTagih);
             this.Controls.Add(this.label53);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.cbxGrup);
             this.Controls.Add(this.label52);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cbxCollector);
             this.Controls.Add(this.label51);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label50);
-            this.Controls.Add(this.textBox33);
+            this.Controls.Add(this.txtByAdmin);
             this.Controls.Add(this.label49);
             this.Controls.Add(this.textBox32);
             this.Controls.Add(this.label48);
-            this.Controls.Add(this.textBox31);
-            this.Controls.Add(this.textBox30);
+            this.Controls.Add(this.txtjlhbunga);
             this.Controls.Add(this.label46);
-            this.Controls.Add(this.textBox29);
             this.Controls.Add(this.label45);
-            this.Controls.Add(this.textBox25);
             this.Controls.Add(this.label44);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.rdbBulanan);
+            this.Controls.Add(this.rdbMingguan);
+            this.Controls.Add(this.rdbHarian);
             this.Controls.Add(this.label43);
             this.Controls.Add(this.txtNoAnggota);
             this.Controls.Add(this.label2);
@@ -1095,13 +1139,17 @@
             this.Load += new System.EventHandler(this.F050105_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ds_data)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataTable1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable2)).EndInit();
             this.DetailPasangan.ResumeLayout(false);
             this.DetailPasangan.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudJlhPinjaman)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudTenor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1109,32 +1157,28 @@
 
         #endregion
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox namasales;
         private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.TextBox textBox35;
+        private System.Windows.Forms.TextBox txtKet;
         private System.Windows.Forms.Label label55;
-        private System.Windows.Forms.TextBox textBox34;
+        private System.Windows.Forms.TextBox txtLokasiTagih;
         private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cbxGrup;
         private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbxCollector;
         private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.TextBox textBox33;
+        private System.Windows.Forms.TextBox txtByAdmin;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.TextBox textBox32;
         private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.TextBox textBox31;
-        private System.Windows.Forms.TextBox textBox30;
+        private System.Windows.Forms.TextBox txtjlhbunga;
         private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.TextBox textBox29;
         private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.TextBox textBox25;
         private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rdbBulanan;
+        private System.Windows.Forms.RadioButton rdbMingguan;
+        private System.Windows.Forms.RadioButton rdbHarian;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label47;
@@ -1218,5 +1262,14 @@
         private System.Data.DataColumn dataColumn34;
         private System.Data.DataColumn dataColumn35;
         private System.Data.DataColumn dataColumn36;
+        private System.Data.DataTable dataTable3;
+        private System.Data.DataColumn dataColumn37;
+        private System.Data.DataColumn dataColumn38;
+        private System.Data.DataTable dataTable4;
+        private System.Data.DataColumn dataColumn39;
+        private System.Windows.Forms.NumericUpDown nudJlhPinjaman;
+        private System.Windows.Forms.NumericUpDown nudTenor;
+        private System.Windows.Forms.TextBox txtjlhbnga;
+        private System.Windows.Forms.TextBox txtSuveryor;
     }
 }
